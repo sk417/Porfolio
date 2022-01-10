@@ -294,7 +294,7 @@ form{
     border-radius: 2rem;
    margin: auto;
     width: 50rem;
-    background-image: url("/back.jpg");
+    background-image: url("back.jpg");
     color: white;
 }
 
