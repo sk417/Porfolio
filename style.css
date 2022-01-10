@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+#navbar{
+    display: flex;
+    margin-top: 5px;
+    align-items: center;
+    position: sticky;
+    top:5px;
+}
+#navbar ul{
+    display: flex;
+     margin: auto;
+   }
+#navbar::before{
+    content: "";
+    background-color: #060207;
+    border-radius: 10px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    text-decoration: none;
+
+}
+#navbar ul li{
+    list-style: none;
+    margin-left: 1rem;
+    text-align: center;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+#navbar li a{
+     text-decoration: none;
+    display:block;
+    padding: 8px 22px;
+    border-radius: 10px;
+    color: rgb(253, 254, 255);
+}
+#navbar li a:hover{
+    background-color: rgb(248, 13, 13);
+    color:black;
+}
+
+ body{
+    background-image: linear-gradient(to bottom right, rgb(73, 73, 160),rgb(161, 86, 231),rgb(147, 12, 224),rgb(33, 221, 105));
+} 
+.heading{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(170, 16, 37);
+}
+
+img{
+    align-items: center;
+    min-width: 30rem;
+    min-height: 32rem;
+    border-radius: 16rem;
+}
+#home{
+    width: 30rem;
+    margin: auto;
+    box-sizing: border-box;
+    text-align: justify;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fa{
+    font-size: 2.5rem;
+    margin:20px;
+    text-decoration: none;  
+}
+
+.fa-github{
+    border-radius: 5px;
+    padding: 5px;
+    color: rgb(12, 10, 10);
+}
+
+.fa-github:hover{
+    color: rgb(249, 255, 246);
+    background-color: black;
+}
+.fa-linkedin{
+    border-radius: 5px;
+    padding: 5px;
+    color: rgb(38, 38, 161);
+}
+.fa-linkedin:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(57, 57, 219);
+}
+.fa-twitter{
+    border-radius: 5px;
+    padding: 5px;
+    color:rgb(20, 17, 214);
+}
+.fa-twitter:hover{
+    color:rgb(255, 255, 255);
+    background-color: rgb(22, 97, 236);
+}
+.fa-instagram{
+    color: rgb(250, 3, 3);
+    border-radius: 5px;
+    padding: 5px;
+}
+.fa-instagram:hover{
+    color: rgb(255, 255, 255);
+    background-color: red;
+}
+.fa-facebook{
+    color: rgb(11, 65, 184);
+    border-radius: 5px;
+    padding: 8px;
+}
+.fa-facebook:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(7, 42, 119);
+}
+#about{
+    max-width: 40rem;
+    margin: auto;
+    text-align: justify;
+    font-family:serif;
+    font-size: 2rem;
+}
+
+#edu{
+    max-width: 60rem;
+    margin:auto;
+    text-align:center;
+}
+#edu p{
+    font-family:sans-serif;
+    font-size: 1.5rem;
+}
+footer{
+    display: flex;
+}
+.matric{
+    box-shadow: 7px 7px 5px black;
+    border-radius: 1rem;
+    padding: 3rem;
+    margin: 10px;
+    text-align: center;
+    background-color: #9563c4;
+    color: white;
+}
+.inter{
+    box-shadow: 7px 7px 5px black;
+    border-radius: 1rem;
+    padding: 3rem;
+    margin: 5px;
+    text-align: center;
+    background-color: #9563c4;
+    color: white;
+}
+.btech{
+    box-shadow: 7px 7px 5px black;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 10px;
+    text-align: center;
+    background-color: #9563c4;
+    color: white;
+}
+
+.head{
+    margin-top: 15px;
+     margin-bottom: 10px;
+     font-weight: bold;
+    text-align: center;
+}
+
+#skill{
+    padding-right: 4rem;
+    display: flex; 
+    margin: auto;
+    text-align: center;
+    max-width: 40rem;
+    background-color: #9563c4;
+    border-bottom-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    box-shadow: -4px -4px 6px rgb(49, 1, 41);
+    line-height:2.5rem;
+}
+ #skill p{
+    display: block;
+    text-align: center;
+ }
+#skill span{
+    margin-left:3rem;
+    max-width:30rem;  
+    padding: 20px;
+    float: left;
+}
+
+ 
+progress {
+    width: 15rem;
+    border-radius: 20px;
+    animation: progressBar 3s ease-in-out;
+    animation-fill-mode: forwards; 
+    background-image: linear-gradient(to right, #fea2a2 0%, #bbc1bf 19%, #97c6e1 42%, #b4efda 79%, #7ac5df 100%);
+    }
+    progress::-webkit-progress-bar {
+    width: 100%;
+    border-radius: 20px;
+    background-color: rgb(168, 177, 216);
+  }
+    progress::-webkit-progress-value {
+    animation: progressBar 8s ;
+    animation-fill-mode:left; 
+    border-radius: 25px;
+    background-image: linear-gradient(to right, #d402fe 0%, #00c9ff 100%);
+  } 
+ 
+#contact p{
+    font-size: 1.8rem;
+    font-family:serif;
+}
+#contact h1{
+    text-decoration: underline;
+    font-size: 3rem;
+}
+#contact{ 
+    margin-top: 30px;
+    background:#3B5998;
+    border-bottom-right-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+    color: white;
+    display: block;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.sub{
+    margin-top: 15px;
+    margin-bottom: 30px;
+    border: 3px solid rgb(148, 148, 182);
+    background-color:#830af5;
+    font-size: 1.25rem;
+    width : 9rem;
+    height: 2.813rem;
+    margin-left:12.5rem;
+    border-radius: 40px;
+    box-sizing: border-box;
+    font-weight: bold;
+    color: #fbf8fd;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   box-shadow: 4px 4px 3px 1px #06010a;
+    
+}
+.sub:hover{
+    background-color: #fcfbfd;
+    color: black;
+}
+
+.name{
+    width: 40rem;
+    height: 2.4rem;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    border-radius: 15px;
+}
+
+.name:hover{
+    border-color: rgb(226, 10, 10);
+}
+
+textarea{
+    width: 40rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    border-radius: 15px;
+}
+
+#touch p{
+    margin-top: 0.5rem;
+}
+
+form{
+    padding-top: 1.5rem;
+    border-radius: 2rem;
+   margin: auto;
+    width: 50rem;
+    background-image: url("/back.jpg");
+    color: white;
+}
+
+#box{
+    margin-left: 5rem;
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    display: flex;
+    margin-top: 5px;
+    align-items: center;
+    position: sticky;
+    top:2rem;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudheer kumar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" media="screen and (min-width:900px)" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:899px)" href="phone.css">
+    
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#edu">EDUCATION</a></li>
+            <li><a href="#skill">SKILL</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+    
+    <p class="heading">Welcome to my website</p>
+    <div id = "box">
+        <p><span id="hours"></span> : <span id="minute"></span> : <span id="second"></span></p>
+    </div>
+    <script>
+        setInterval(tameUpdate, 1000);
+        function tameUpdate(){
+            hours.innerHTML = new Date().getHours();
+            minute.innerHTML = new Date().getMinutes();
+            second.innerHTML = new Date().getSeconds();
+        }
+    </script>
+    <section id="home">
+    <div id="image">
+        <img src="myimg.png" alt="Picture loading...">
+    </div>
+    
+        <dl>
+            <dt><h2>Hey There !</h2></dt>
+            <dd> <h4>I'm Sudheer Kumar</h4></dd>
+        </dl>
+        <p>Full - stack Devloper (MERN- stack) | Competitive Programmer</p>
+        <a href="https://github.com/sk417" class="fa fa-github"></a>&nbsp;
+        <a href="https://www.linkedin.com/in/sudheer-kumar-977856218" class="fa fa-linkedin"></a>&nbsp;
+        <a href="https://twitter.com/Sudheer18529099?t=Y126R991pUCcRu6-IspcYw&s=08" class="fa fa-twitter"></a>&nbsp;
+        <a href="https://www.instagram.com/sudheerkumarmki/" class="fa fa-instagram"></a>&nbsp;
+        <a href="https://www.facebook.com/profile.php?id=100018639312607" class="fa fa-facebook"></a>&nbsp;
+        
+        
+    </section>
+    <section id="about">
+        <dl>
+            <dt>I'm Sudheer kumar</dt>
+            <dd>A Full stack devloper, Competitive programmer, pursuing bachelor of technology in computer engineering.
+                Recently i learned some modern technology that attract me more in the technology field. I'm always excited
+                to learn new thing and i have positive attitude towards anything.</dd>
+        </dl>
+    </section>
+    <section id="edu">
+        <i class="fa fa-graduation-cap" style="font-size:36px">&nbsp;&nbsp;Education</i>
+        <footer>
+        <p class="matric">Matriculation<br><br>
+        R C L Uchch Vidya Mandir<br>
+        <i class="fa fa-map-marker" style="font-size:24px">&nbsp;Mathura, Bihar</i><br>
+        2017</p>
+        <p class="inter">Intermediate<br><br>
+        L N D College<br>
+        <i class="fa fa-map-marker" style="font-size:24px">&nbsp;Motihari, Bihar</i><br>
+        2019</p>
+        <p class="btech">Bachelor of Technology<br><br>
+         Computer Engineering<br>
+        C V Raman global university<br>
+        <i class="fa fa-map-marker" style="font-size:24px">&nbsp;Bhubaneswar, Odisha</i><br>
+        Currently studying(2020-2024)</p>
+    </footer>
+    </section>
+    <p class="head"><i class="fa fa-snowflake-o" style="font-size:36px">&nbsp;SKILL</i></p>
+
+    <section id="skill">
+     
+        <span>
+        <h2>C</h2>
+        <progress max="100" min="0" value="75"></progress>
+        <h2>C++</h2>
+        <progress max="100" min="0" value="80"></progress>
+        <h2>Python</h2>
+        <progress max="100" min="0" value="40"></progress>
+        <h2>JavaScript</h2>
+        <progress max="100" min="0" value="60"></progress>
+        <h2>HTML</h2>
+        <progress max="100" min="0" value="80"></progress>
+        </span>
+        <span class="dev">
+        <h2>CSS</h2>
+        <progress max="100" min="0" value="70"></progress>
+        <h2>Express JS</h2>
+        <progress max="100" min="0" value="40"></progress>
+        <h2>SQL</h2>
+        <progress max="100" min="0" value="75"></progress>
+        <h2>MONGODB</h2>
+        <progress max="100" min="0" value="65"></progress>
+        <h2>MONGOOSE</h2>
+        <progress max="100" min="0" value="50"></progress>
+        </span>
+    </section>
+    <section id="contact">
+        <h1>Contact me</h1><br>
+        <i class="fa fa-phone" style="font-size:20px">&nbsp;+91&nbsp;8541046916</i><br>
+        <i class="fa fa-envelope-open-o" style="font-size:20px">&nbsp;sudheerkumarmki@gmail.com</i><br>
+        <i class="fa fa-map-marker" style="font-size:20px">&nbsp;Bettiah, Bihar India</i><br><br>
+        
+        <form id="touch">
+            <p>Fill this form for any queries or suggestion</p><br><br>
+        <p>Name</p><br>
+        <input type="text" name="" class="name" placeholder="Enter your name" required>
+        <p>Email</p><br>
+        <input type="email" name="" class="name" placeholder="Enter your email" required>
+        <p>Any Queries&nbsp;/&nbsp;Suggestion</p>
+       <textarea name="queries" cols="35" rows="8"placeholder="Enter your queries or suggestion"></textarea><br>
+        <input type="reset" value="RESET" class="sub">
+        <input type="submit" value="SUBMIT" class="sub">
+    </form>
+    </section>
+   
+
+
+</body>
+
+</html>
